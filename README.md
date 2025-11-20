@@ -8,6 +8,7 @@ The goal is to identify **whether a driver is likely to leave the company** base
 - Tenure details (joining date, last working date)
 - Performance history (monthly business value, quarterly rating, grade, income)
 
+---
 ## 🎯 Objective
 
 Build and evaluate **ensemble learning models** to predict **driver attrition** (whether a driver will leave OLA) using historical driver-level data.
@@ -20,6 +21,7 @@ The project aims to:
 - Compare model performance to identify the best approach
 - Generate actionable insights to help reduce driver churn
 
+---
 ## Column Profiling:
 |Column | Description|
 |-------|-------------|
@@ -37,6 +39,7 @@ The project aims to:
 |Total Business Value | The total business value acquired by the driver in a month (negative business indicates cancellation/refund or car EMI adjustments)|
 |Quarterly Rating | Quarterly rating of the driver: 1,2,3,4,5 (higher is better)|
 
+---
 ## 🧠 Concepts & Techniques Used
 ### Data Preparation
 - Handling missing values
@@ -64,6 +67,7 @@ The project aims to:
 - F1-Score
 - ROC/AUC
 
+---
 ## 🔍 Findings & Observations
 - Dataset contains **19,104 records** and **14 features**.
 - Gender, education level, and city require categorical encoding.
@@ -72,6 +76,7 @@ The project aims to:
 - Drivers with **negative business value** are significantly more likely to leave.
 - Date fields contain inconsistent formats and required corrections.
 
+---
 ## 💡 Key Insights
 - **Tenure is one of the strongest predictors** of whether a driver will leave.
 - **Quarterly rating** positively correlates with retention — low-rated drivers leave more often.
@@ -79,6 +84,7 @@ The project aims to:
 - Ensemble models outperform classical models in handling non-linear churn patterns.
 - Boosting methods (particularly **XGBoost/CatBoost**) deliver the highest predictive power.
 
+---
 ## 📈 Recommendations
 
 - Implement a **driver retention dashboard** using the model’s output to identify high-risk drivers early.
@@ -87,6 +93,7 @@ The project aims to:
 - Use business-value trends to proactively engage drivers whose performance is declining.
 - Perform periodic model retraining as new driver behavior data becomes available.
 
+---
 ## 📝 Conclusion
 
 This project successfully demonstrates how **ensemble learning** methods can be leveraged to **predict driver attrition** with high accuracy.
